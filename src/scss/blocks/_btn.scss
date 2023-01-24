@@ -1,0 +1,22 @@
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    width: 146px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: $main-color;
+    margin-left: 23px;
+    transition: all .5s;
+    &_smallFontSize {
+        font-size: 13px;
+    }
+    &__menu {
+        &_active {
+            font-size: 16px;
+            height: 120px;
+            transform: translateX(283px) translateY(21px);
+            width: 432px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin textAnimation {
+    text-decoration: none;
+            color: black;
+            display: block;
+            transition: all .4s;
+            &::before {
+                opacity: 70%;
+                content: attr(content);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transform: translateY(20px);
+            }
+            &:hover {
+                transform: translateY(-20px);
+            }
+}
