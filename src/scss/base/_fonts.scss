@@ -1,56 +1,64 @@
 @font-face {
-    font-family: 'Arial Nova';
-    src: local('Arial Nova Regular'), local('Arial-Nova-Regular'),
-      url('../../fonts/ArialNova.woff2') format('woff2'),
-      url('../../fonts/ArialNova.woff') format('woff'),
-      url('../../fonts/ArialNova.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'icomoon';
-    src: url('../../iconFonts/icomoon.eot?ln80sa');
-    src: url('../../iconFonts/icomoon.eot?ln80sa#iefix') format('embedded-opentype'),
-      url('../../iconFonts/icomoon.ttf?ln80sa') format('truetype'),
-      url('../../iconFonts/icomoon.woff?ln80sa') format('woff'),
-      url('../../iconFonts/icomoon.svg?ln80sa#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"],
-  [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-vk:before {
-    content: "\e900";
-    color: #fff;
-  }
-  
-  .icon-Vector:before {
-    content: "\e901";
-    color: #fff;
-  }
-  
-  .icon-twitter:before {
-    content: "\e902";
-    color: #fff;
-  }
-  
-  .icon-instagram:before {
-    content: "\e903";
-    color: #fff;
-  }
+  font-family: 'Arial Nova';
+  src: local('Arial Nova Regular'), local('Arial-Nova-Regular'),
+    url('../../fonts/ArialNova.woff2') format('woff2'),
+    url('../../fonts/ArialNova.woff') format('woff'),
+    url('../../fonts/ArialNova.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../iconFonts/icomoon.eot?ln80sa');
+  src: url('../../iconFonts/icomoon.eot?ln80sa#iefix') format('embedded-opentype'),
+    url('../../iconFonts/icomoon.ttf?ln80sa') format('truetype'),
+    url('../../iconFonts/icomoon.woff?ln80sa') format('woff'),
+    url('../../iconFonts/icomoon.svg?ln80sa#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e904";
+}
+
+.icon-smallArrow:before {
+  content: "\e905";
+}
+
+.icon-vk:before {
+  content: "\e900";
+  color: #fff;
+}
+
+.icon-Vector:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-twitter:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-instagram:before {
+  content: "\e903";
+  color: #fff;
+}

@@ -7,20 +7,24 @@
     background-color: #fff;
     font-size: 15px;
     line-height: 18px;
+
     &__active {
         border-bottom: 1px solid $main-color;
     }
+
     &__wrapper {
         display: flex;
         align-items: center;
         position: relative;
     }
+
     &__logo {
         display: flex;
         align-items: center;
         margin-right: 335px;
         cursor: pointer;
     }
+
     &__circle {
         display: flex;
         align-items: center;
@@ -31,24 +35,29 @@
         border-radius: 50%;
         background-color: $main-color;
         margin-right: 10px;
+
         img {
             position: relative;
             bottom: 2px;
         }
     }
+
     &__list {
         display: flex;
     }
+
     &__item {
         font-size: 15px;
         line-height: 18px;
         position: relative;
         overflow: hidden;
+
         a {
             @include textAnimation
         }
-        
+
     }
+
     &__services {
         display: flex;
         align-items: center;
@@ -57,30 +66,36 @@
         width: 89px;
         margin-right: 23px;
         cursor: default;
+
         img {
             position: relative;
             top: 1px;
             margin-left: 8px;
             transition: all .1s;
         }
+
         &:hover {
             img {
                 transform: rotate(180deg);
             }
         }
+
         &_disable {
             &:hover {
-                img{
+                img {
                     transform: rotate(0);
                 }
             }
         }
     }
+
     &__list {
         position: relative;
+
         li {
             margin-right: 40px;
         }
+
         &::after {
             right: 0;
             top: -26px;
@@ -92,6 +107,7 @@
             background-color: #EEECEC;
         }
     }
+
     &__menuBtn {
         position: relative;
         margin-left: 23px;
@@ -100,6 +116,7 @@
         justify-content: end;
         cursor: pointer;
     }
+
     &__serviceMenu {
         background-color: #fff;
         width: 100%;
@@ -111,19 +128,23 @@
         transition: all .3s;
         position: relative;
         top: 10px;
+
         li {
             font-weight: 400;
             font-size: 21px;
             color: $main-black;
             margin-bottom: 15px;
+
             &:nth-last-child(1) {
                 margin-bottom: 0;
             }
         }
+
         &_show {
             opacity: 1;
         }
     }
+
     &__close {
         opacity: 0;
         position: absolute;
@@ -132,20 +153,24 @@
         z-index: 50;
         transition: all .5s;
         cursor: pointer;
-            span {
-                display: block;
-                background-color: $main-black;
-                width: 28px;
-                height: 2px;
-                transform: rotate(45deg) translateX(2px);
-                &:nth-child(2) {
-                    transform: rotate(-45deg) translateX(1px);
-                }
+
+        span {
+            display: block;
+            background-color: $main-black;
+            width: 28px;
+            height: 2px;
+            transform: rotate(45deg) translateX(2px);
+
+            &:nth-child(2) {
+                transform: rotate(-45deg) translateX(1px);
             }
+        }
+
         &_show {
             opacity: 1;
         }
     }
+
     &__serviseReg {
         position: absolute;
         right: 0;

@@ -1,4 +1,4 @@
-@import './base/_variables.scss'; 
+@import './base/_variables.scss';
 @import './base//mixins';
 @import './base/_fonts.scss';
 @import './blocks/btn';
@@ -13,7 +13,12 @@ body {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -28,6 +33,14 @@ ul {
   width: 1340px;
 }
 
+.header {
+  height: 70px;
+}
+
+@import './blocks/divider';
 @import './blocks/header/menu';
 @import './blocks/header/dropDown';
 @import './blocks/header/serviceMenu';
+@import './blocks/promo';
+@import './blocks/advantage';
+@import './blocks/service';

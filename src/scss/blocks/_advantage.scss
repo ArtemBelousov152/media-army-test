@@ -1,0 +1,44 @@
+.advantage {
+    background-color: $main-bg;
+    padding: 180px 0;
+
+    &__header {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        &_text {
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $main-black;
+        }
+
+        &_number {
+            font-weight: 700;
+            font-size: 12px;
+            color: $main-gray;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__descr {
+        width: 650px;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 120%;
+        color: $main-black;
+    }
+
+    &__year {
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 90%;
+        color: $main-color;
+    }
+}
