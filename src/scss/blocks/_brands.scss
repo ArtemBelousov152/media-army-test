@@ -1,0 +1,21 @@
+.brands {
+    background-color: $main-bg;
+    &__slider {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+    &__item {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tns-horizontal.tns-subpixel>.tns-item {
+        display: flex;
+    }
+}

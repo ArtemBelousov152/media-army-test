@@ -55,11 +55,13 @@
     }
 
     &__slider {
+        overflow: hidden;
         &_btn {
             width: 125px;
             position: absolute;
             bottom: 59px;
             left: 40px;
+            z-index: 5;
         }
 
         &_left {
@@ -80,6 +82,7 @@
             position: absolute;
             bottom: 68px;
             right: 130px;
+            z-index: 5;
         }
     }
 }

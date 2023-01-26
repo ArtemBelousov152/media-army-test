@@ -1,7 +1,7 @@
 import menu from "./modules/menu";
-import slider from "./modules/slider";
+import sliders from "./modules/slider";
 
 window.addEventListener('DOMContentLoaded',() => {
     menu();
-    slider();
+    sliders();
 });

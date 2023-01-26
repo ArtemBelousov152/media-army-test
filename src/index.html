@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Автоцентр</title>
@@ -161,26 +162,30 @@
                 </button>
                 <div class="promo__container">
                     <div class="promo__slider">
-                        <div class="promo__slide">
-                            <img src="./img/slideImg/bmw.jpg" alt="bmw">
+                        <div class="promo__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="promo__slide swiper-slide">
+                                    <img src="./img/slideImg/bmw.jpg" alt="bmw">
+                                </div>
+                                <div class="promo__slide swiper-slide">
+                                    <img src="./img/slideImg/human.jpg" alt="human">
+                                </div>
+                                <div class="promo__slide swiper-slide">
+                                    <img src="./img/slideImg/oil.jpg" alt="oil">
+                                </div>
+                            </div>
                         </div>
-                        <div class="promo__slide">
-                            <img src="./img/slideImg/human.jpg" alt="human">
+                        <div class="promo__slider_btn">
+                            <button class="promo__slider_left btn btn__circle">
+                                <span class="icon-arrow"></span>
+                            </button>
+                            <button class="promo__slider_right btn btn__circle">
+                                <span class="icon-arrow"></span>
+                            </button>
                         </div>
-                        <div class="promo__slide">
-                            <img src="./img/slideImg/oil.jpg" alt="oil">
-                        </div>
-                    </div>
-                    <div class="promo__slider_btn">
-                        <button class="promo__slider_left btn btn__circle">
-                            <span class="icon-arrow"></span>
-                        </button>
-                        <button class="promo__slider_right btn btn__circle">
-                            <span class="icon-arrow"></span>
-                        </button>
                     </div>
                     <div class="promo__slider_number">
-                        <div class=" ">1</div>
+                        <div class="promo__slider_current">1</div>
                         /
                         <div class="promo__slider_total"></div>
                     </div>
@@ -295,6 +300,121 @@
         </div>
     </section>
 
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits__grid">
+                <div class="benefits__left">
+                    <div class="benefits__descr">
+                        <p>
+                            Обратившись к нам, в автоцентр, вы окажетесь в надёжных руках специалистов послегарантийного
+                            ремонта и технического обслуживания автомобилей.
+                        </p>
+                        <p>
+                            Чтобы автомобиль всегда оставался в отличной форме, необходимо выполнять регулярное ТО
+                            по программе рекомендованной производителем.
+                        </p>
+                        <p>
+                            Подразделение нашей компании СЕРТИФИЦИРОВАННО - это позволяет производить обслуживание
+                            вашего автомобиля С СОХРАНЕНИЕМ ГАРАНТИИ.
+                        </p>
+                        <p>
+                            Обслуживаем и ремонтируем
+                        </p>
+                    </div>
+                </div>
+                <div class="benefits__right">
+                    <div class="benefits__item">
+                        <img src="./img/icons/shield.svg" alt="shield">
+                        <div class="benefits__text">
+                            Гарантия работы <br />
+                            1 год
+                        </div>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/icons/person.svg" alt="person">
+                        <div class="benefits__text">
+                            Квалифицированные <br />
+                            сотрудники
+                        </div>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/icons/coffee.svg" alt="coffee">
+                        <div class="benefits__text">
+                            Комфортные <br />
+                            зоны ожидания
+                        </div>
+                    </div>
+                    <div class="benefits__item">
+                        <img src="./img/icons/car.svg" alt="car">
+                        <div class="benefits__text">
+                            Современное <br />
+                            оборудование
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <!-- <div class="brands__slider">
+            <div class="brands__item">
+                <img src="./img/carLogo/Volvo.png" alt="volvo">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/Land Rover.png" alt="landrover">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/Mercedes.png" alt="mercedes">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/BMW.png " alt="bmw">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/Porsche.png" alt="porshe">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/Audi.png" alt="audi">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/Wolkswagen.png" alt="Wolkswagen">
+            </div>
+            <div class="brands__item">
+                <img src="./img/carLogo/skoda.png" alt="skoda">
+            </div>
+        </div> -->
+        <div class="brands__slider swiper">
+            <div class="swiper-wrapper ">
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Volvo.png" alt="volvo">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Land Rover.png" alt="landrover">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Mercedes.png" alt="mercedes">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/BMW.png " alt="bmw">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Porsche.png" alt="porshe">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Audi.png" alt="audi">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/Wolkswagen.png" alt="Wolkswagen">
+                </div>
+                <div class="brands__item swiper-slide">
+                    <img src="./img/carLogo/skoda.png" alt="skoda">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div style="height: 1000px;"></div>
 
 </body>
 <script src="js/bundle.js"></script>

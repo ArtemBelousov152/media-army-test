@@ -37,6 +37,10 @@ ul {
   height: 70px;
 }
 
+p {
+  margin: 0;
+}
+
 @import './blocks/divider';
 @import './blocks/header/menu';
 @import './blocks/header/dropDown';
@@ -44,3 +48,5 @@ ul {
 @import './blocks/promo';
 @import './blocks/advantage';
 @import './blocks/service';
+@import './blocks/benefits';
+@import './blocks/brands';
