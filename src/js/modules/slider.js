@@ -50,6 +50,24 @@ const sliders = () => {
             brandsSlider.slidePrev();
         }
     })
+
+
+    //Слайдер для блока с акциями
+    const discountSlider = new Swiper('.discounts__slider', {
+        slidesPerView: 1,
+    })
+
+    document.querySelectorAll(".discounts__left").forEach(item => {
+        item.addEventListener('click', () => {
+            discountSlider.slidePrev();
+        })
+    }) 
+
+    document.querySelectorAll(".discounts__right").forEach(item => {
+        item.addEventListener('click', () => {
+            discountSlider.slideNext();
+        })
+    })
 }
 
 export default sliders;

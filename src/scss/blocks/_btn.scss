@@ -20,11 +20,13 @@
             transform: translateX(128px) translateY(21px);
             width: 276px;
         }
+
         &:hover {
             background-color: $main-black;
             color: #fff;
         }
     }
+
     &__arrowBtn {
         width: 233px;
         height: 60px;
@@ -32,12 +34,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         span {
             transform: translateY(0);
             transition: all .5s;
         }
+
         &:hover {
             background-color: #fff;
+
             span {
                 transform: translateY(5px);
             }
@@ -48,6 +53,12 @@
         height: 60px;
         width: 60px;
         border-radius: 50%;
+
+        &-blackBorder {
+            background-color: transparent;
+            border: 1px solid #313232;
+        }
+
         &:hover {
             background-color: #fff;
         }
@@ -62,13 +73,25 @@
         border-radius: 50%;
         font-size: 8px;
         line-height: 0;
+
         &-black {
             background-color: $main-black;
             color: white;
         }
+
         span {
             position: relative;
             left: 2px;
+            transform: rotateZ(-90deg);
+        }
+    }
+
+    &__nav {
+        &_left {
+            transform: rotateZ(90deg);
+        }
+
+        &_right {
             transform: rotateZ(-90deg);
         }
     }

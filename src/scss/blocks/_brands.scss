@@ -1,10 +1,12 @@
 .brands {
     background-color: $main-bg;
+    width: 100vw;
     &__slider {
         display: flex;
         overflow: hidden;
         position: relative;
     }
+
     &__item {
         position: relative;
         width: 300px;
@@ -15,6 +17,7 @@
         justify-content: center;
         align-items: center;
     }
+
     .tns-horizontal.tns-subpixel>.tns-item {
         display: flex;
     }

@@ -64,14 +64,6 @@
             z-index: 5;
         }
 
-        &_left {
-            transform: rotateZ(90deg);
-        }
-
-        &_right {
-            transform: rotateZ(-90deg);
-        }
-
         &_number {
             color: #fff;
             font-weight: 400;

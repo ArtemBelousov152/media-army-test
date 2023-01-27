@@ -1,0 +1,71 @@
+.discounts {
+    background-color: $main-bg;
+    padding: 180px 0;
+
+    &__title {
+        font-weight: 400;
+        font-size: 67px;
+        line-height: 95%;
+        color: $main-black;
+    }
+
+    &__slider {
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 880px auto;
+        column-gap: 40px;
+    }
+
+    &__img {
+        height: 550px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 51px;
+        line-height: 105%;
+        width: 400px;
+    }
+
+    &__date {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $main-gray;
+    }
+
+    &__more {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        p {
+            margin-left: 10px;
+            display: block;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        bottom: 0;
+    }
+}
